@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transform</title>
+
+  <style>
+    img {
+      display: block;
+      max-width: 280px;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      padding: 20px;
+      outline: 4px solid red;
+    }
+
+    img {
+      
+      /*deslocamento do elemento*/
+      /*transform: translate(100px, 100px);*/
+      
+      /*tamanho a ser alterado do elemento*/
+      /*transform: scale(2, 2);*/
+      
+      /*rotação do elemento.
+      0.5turn = meia volta*/
+      /*transform: rotate(45deg);*/
+      
+      /*inclinação do elemento*/
+      /*transform: skew(10deg);*/
+      
+      transform: translate(100px, 100px) scale(1.2, 1.2) rotate(.5turn) skew(25deg) ;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="https://www.nicepng.com/png/full/781-7818059_monkey-d-luffy-one-piece-luffy-logo.png" alt="Luffy">
+  </div>
+</body>
+</html>
