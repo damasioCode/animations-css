@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyframes</title>
+
+  <style>
+    img {
+      display: block;
+      max-width: 180px;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      padding: 20px;
+
+      /*forma curta*/
+      animation: fly 4s alternate infinite;
+      
+      /*
+      animation-name: fly;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-fill-mode: backwards;
+      animation-play-state: paused
+      */
+    }
+
+    @keyframes fly {
+
+      0% {
+        transform: translate(80px, 80px);
+      }
+
+      20% {
+        transform: translate(-80px, 60px) rotate(45deg);
+      }
+
+      40% {
+        transform: translate(80px, -75px) rotate(1turn);
+      }
+
+      60% {
+        transform:  scale( 1.2);
+      }
+
+      80% {
+        transform: translate(40px, 80px) scale( .8);
+      }
+
+      100% {
+        transform: translate(20px, 40px);
+      }
+
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="https://www.nicepng.com/png/full/781-7818059_monkey-d-luffy-one-piece-luffy-logo.png" alt="Luffy">
+  </div>
+</body>
+</html>
